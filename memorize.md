@@ -2,12 +2,6 @@
 
 A **`PreToolUse` hook** is the appropriate preventive control because it runs **before** the tool executes. Exiting with **code 2** blocks the call and sends the hook's stderr back to Claude.
 
-**Why the others are wrong:**
-
-- **A — Wrong:** `CLAUDE.md` provides instructions/guidance; it isn't a hard enforcement mechanism.
-- **B — Wrong:** `PostToolUse` runs after execution, so it cannot prevent the command.
-- **D — Wrong:** Tool descriptions improve model behavior but are not security enforcement.
-
 ---
 
 **Message Batches API status/results**
