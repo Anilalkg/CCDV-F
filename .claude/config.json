@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "post-edit": [
+      {
+        "matcher": "*.py",
+        "command": "ruff format {file_path}"
+      }
+    ]
+  }
+}
